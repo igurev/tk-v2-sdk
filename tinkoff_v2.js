@@ -30,7 +30,7 @@ module.exports = function (opt){
 
   this.isDebug  = false;
   this.url      = 'invest-public-api.tinkoff.ru:443';
-  this.protoDir = __dirname + '/investAPI/src/docs/contracts/';
+  this.protoDir = opt.protoDir ?? __dirname + '/investAPI/src/docs/contracts/';
 
   
   this.metadataCreds     = false;

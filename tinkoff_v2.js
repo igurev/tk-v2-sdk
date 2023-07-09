@@ -29,7 +29,7 @@ module.exports = function (opt){
   }
 
   this.isDebug  = false;
-  this.url      = 'invest-public-api.tinkoff.ru:443';
+  this.url      = opt.sandbox ? 'sandbox-invest-public-api.tinkoff.ru:443' : 'invest-public-api.tinkoff.ru:443';
   this.protoDir = opt.protoDir ?? __dirname + '/investAPI/src/docs/contracts/';
 
   
